@@ -1,0 +1,231 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  background-image: url("../../assets/contact/parallax.jpg");
+  background-attachment: fixed;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts .box .address {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.contacts .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  max-width: 1400px;
+  gap: 20px;
+  background-color: aliceblue;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.contacts .left,
+.contacts .right {
+  width: 100%;
+}
+
+.contacts iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.contacts .right {
+  padding: 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.contacts h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.contacts p {
+  color: #777777;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  width: 100%;
+  text-align: left;
+}
+
+.contacts .items {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.contacts .box {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.contacts .box h4 {
+  margin-bottom: 6px;
+  color: #555555;
+  font-weight: 600;
+}
+
+.contacts .box p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #777777;
+}
+
+.contacts .form-input,
+.contacts .form-select,
+.contacts .form-textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  font-size: 1rem;
+  background-color: #f7f7f7;
+  transition: border-color 0.3s ease;
+}
+
+.contacts .form-input:focus,
+.contacts .form-select:focus,
+.contacts .form-textarea:focus {
+  border-color: #1eb2a6;
+}
+
+.contacts .form-textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contacts .submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #94a974;
+  color: #333333;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contacts .submit-btn:hover {
+  background-color: hsl(87, 53%, 79%);
+  color:#333333                                                                                                                                                                              
+}
+
+.contacts .submit-error {
+  color: red;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .contacts .container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .contacts .items {
+    flex-direction: column;
+  }
+
+  .contacts .box {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .contacts .right {
+    padding: 30px;
+  }
+
+  .contacts iframe {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .contacts .container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    width: 100%;
+  }
+
+
+  @media screen and (max-width: 484px) {
+  .contacts .box .address {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}
+
+
+  .contacts .items {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contacts .box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .contacts .right {
+    padding: 20px;
+  }
+
+  .contacts iframe {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+  }
+
+  .contacts h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .contacts p {
+    font-size: 0.9rem;
+  }
+
+  .contacts .form-input,
+  .contacts .form-select,
+  .contacts .form-textarea {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .contacts .submit-btn {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .contacts .box p {
+    font-size: 0.9rem;
+  }
+}

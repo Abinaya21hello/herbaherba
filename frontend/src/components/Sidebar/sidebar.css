@@ -1,0 +1,57 @@
+/* Sidebar Styles */
+.sidebar {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 20px; /* Adjust as needed */
+  max-height: calc(100vh - 20px); /* Full viewport height minus some offset */
+  overflow-y: auto;
+}
+
+/* Card Styles */
+.card {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/* Price Range Styles */
+.priceRange {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Filter Wrapper Styles */
+.filterWrapper {
+  margin-top: 20px;
+}
+
+/* Hide sidebar on small screens */
+.res-hide {
+  display: none;
+}
+
+/* Show sidebar for larger screens and the specified range */
+@media (min-width: 600px) and (max-width: 991px) {
+  .res-hide {
+    display: block;
+  }
+}
+
+/* Hide sidebar on extra-large screens */
+@media (min-width: 992px) {
+  .res-hide {
+    display: block;
+  }
+}
+
+/* Dropdown styles (if applicable) */
+nav .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 20px;
+  display: none;
+  z-index: 1000;
+}

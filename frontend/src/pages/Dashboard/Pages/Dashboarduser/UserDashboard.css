@@ -1,0 +1,69 @@
+/* Profile Information Card */
+.profile-card {
+  margin-top: 2rem;
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Card Header */
+.profile-card-header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #96cc98; /* Green line under header */
+  padding-bottom: 0.5rem;
+}
+
+/* Profile Info */
+.profile-info {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Email Note */
+.email-note {
+  font-size: 1rem;
+  color: #888;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* Buttons */
+.edit-button {
+  background-color: #4CAF50; /* Green */
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 0.75rem;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.edit-button:hover {
+  background-color: #45a049;
+}
+
+.delete-button {
+  background-color: #c34119; /* Red */
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.delete-button:hover {
+  background-color: #e64a19;
+}

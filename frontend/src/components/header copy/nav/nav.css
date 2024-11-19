@@ -1,0 +1,190 @@
+.navContainer {
+  margin: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.catTab {
+  padding: 8px 20px !important;
+  font-size: 20px !important;
+}
+
+nav ul {
+  display: flex; /* Flex layout for desktop */
+  flex-wrap: nowrap; /* Prevent wrapping for desktop */
+  padding: 0; /* Reset padding */
+  margin: 0; /* Reset margin */
+}
+
+nav ul li {
+  position: relative;
+  transition: transform 0.3s ease; /* Increase hover transition time */
+}
+
+.categoryContainer {
+  color: #3d5f31 !important;
+}
+
+.modelContainer {
+  text-decoration: none !important;
+  color: #3d5f31 !important;
+}
+
+.subProductContainer {
+  font-size: 20px !important;
+  position: relative;
+}
+
+.subProductContainer::after {
+  font-size: 16px;
+  margin-left: 8px;
+  color: #455627;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.3s ease; /* Increase color change transition time */
+}
+
+.subProductContainer:hover::after {
+  color: #000;
+}
+
+nav ul li button {
+  text-transform: capitalize !important;
+  padding: 21px 25px !important;
+  color: #b6bb22 !important;
+  border-radius: 0px !important;
+  transition: background-color 0.4s ease, transform 0.2s ease; /* Smooth background transition */
+}
+
+nav ul li button a {
+  text-decoration: none !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+  font-size: 21px;
+  transition: color 0.4s ease; /* Smooth color transition */
+}
+
+nav ul li:hover {
+  transform: scale(1.1); /* Increase scale effect on hover for more visibility */
+}
+
+nav ul li:hover button {
+  background-color: rgba(184, 187, 34, 0.3); /* More pronounced background color on hover */
+}
+
+/* Dropdown styles */
+nav .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 450% !important;
+  background-color: #c8e1b8 !important;
+  padding: 20px;
+  display: none; /* Hidden by default */
+  z-index: 1000;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow for visibility */
+  white-space: nowrap;
+  opacity: 0; /* Start invisible for fade effect */
+  transform: translateY(-10px); /* Start position for animation */
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease; /* Increased fade effect */
+}
+
+/* Show dropdown with animation when the category is hovered */
+nav ul li:hover .dropdown {
+  display: flex; /* Show dropdown on hover */
+  animation: dropdownFadeIn 0.4s forwards; /* Animation applied */
+  opacity: 1; /* Make visible */
+  transform: translateY(0); /* Move to final position */
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); /* Slide down effect */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav .dropdown-content {
+  display: flex;
+  justify-content: space-around;
+  overflow-x: auto;
+  padding: 0 20px;
+  gap: 40px;
+}
+
+nav .dropdown-content .col {
+  width: 200px;
+  margin-right: 30px;
+}
+
+nav .dropdown-content .col h3 {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+nav .dropdown-content .col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav .dropdown-content .col ul li {
+  margin-bottom: 8px;
+  transition: transform 0.3s ease; /* Increase hover transition time */
+}
+
+nav .dropdown-content .col ul li:hover {
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
+nav .dropdown-content .col ul li a {
+  color: #353725;
+  font-size: 14px;
+  transition: color 0.4s; /* Smooth color transition */
+}
+
+nav .dropdown-content .col ul li a:hover {
+  color: #000;
+}
+
+.dropdown {
+  transition: opacity 0.4s ease, visibility 0.4s ease; /* Increased transition time */
+}
+
+.navbar-link.active {
+  color: rgb(24, 113, 18) !important;
+  text-decoration: underline !important;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  nav ul {
+    display: block; /* Change to block for mobile view */
+    width: 100% !important; /* Set width to 100% for mobile view */
+  }
+
+  nav ul li {
+    margin-bottom: 10px; /* Space between items */
+    width: 100%; /* Ensure each item takes full width */
+  }
+
+  nav ul li:hover .dropdown {
+    display: flex; /* Show dropdown on hover */
+    width: 100% !important; /* Set dropdown width to 100% */
+    position: relative; /* Position dropdown relative to li */
+    left: 0; /* Align dropdown under the button */
+  }
+
+  nav ul li button {
+    padding: 10px 15px !important; /* Adjust button padding */
+    font-size: 16px !important; /* Adjust font size */
+    width: 100%; /* Ensure buttons take full width */
+  }
+}

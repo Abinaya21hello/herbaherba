@@ -1,0 +1,98 @@
+/* Updated Herbal card styles */
+.herbal-card {
+margin-top: 18%;
+width: 70%;
+margin-left: 10%;
+  border: 2px solid #4d774e; /* Dark green border */
+  background-color: #dddac0; /* Light background */
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.2rem rgba(77, 119, 78, 0.2);
+  padding: 2rem;
+}
+
+/* Center text for h2 */
+h2 {
+  font-size: 45px !important;
+  text-align: center;
+  font-size: "18px";
+  font-size: 1.5rem; /* Adjust font size as needed */
+  color: #4d774e; /* Optional: Add color that fits your theme */
+}
+
+.error-message {
+  font-size: 24px; /* Adjust the font size as needed */
+  color: red; /* Ensure the error message is visible */
+  margin-top: 0.5rem; /* Add some space between the field and the error message */
+}
+
+
+/* Header styles */
+.herbal-header {
+  background-color: #4d774e; /* Herbal dark green */
+  color: #fff;
+  padding: 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 1rem 1rem 0 0;
+  text-align: center;
+}
+
+/* Form label styles */
+.form-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4d774e;
+  margin-bottom: 0.5rem;
+}
+
+/* Custom input container */
+.input-group {
+  position: relative;
+}
+
+.herbal-input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  border: 1px solid #a9c4b7;
+  background-color: #f7f7f2;
+  transition: border-color 0.3s;
+}
+
+.herbal-input:focus {
+  border-color: #4d774e;
+  box-shadow: 0 0 0 0.2rem rgba(77, 119, 78, 0.25);
+}
+
+/* Eye icon inside input */
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 1rem; /* Adjust this value as needed */
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #4d774e;
+  z-index: 1; /* Ensure it appears on top */
+}
+
+
+/* Button styles */
+.herbal-button {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  background: linear-gradient(to right, #4d774e, #6d9a6b);
+  color: white;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.herbal-button:hover {
+  background: linear-gradient(to right, #2e5c35, #4d774e);
+}
+
+.text-danger {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
