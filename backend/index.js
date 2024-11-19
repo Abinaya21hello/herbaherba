@@ -31,8 +31,8 @@ const allowedOrigins = [
 
   "https://admin.eherbals.in",
 
-  "https://kumar-herbal-back.vercel.app",
-  "https://herballeaf-frontend.vercel.app/",
+  "https://herbaherba.vercel.app",
+  "https://herbaherba-admin.vercel.app",
 
   "https://back.eherbals.in/",
 ];

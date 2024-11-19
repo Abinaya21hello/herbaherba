@@ -3,7 +3,7 @@ import axios from "axios";
 // Create an Axios instance
 const axiosInstance = axios.create({
   //  baseURL: 'https://back.eherbals.in/',
-  baseURL: "https://herba-backend.vercel.app",
+  baseURL: "https://herbaherba-backend.vercel.app",
 
   // baseURL: "http://localhost:5000/",
   timeout: 10000, // Set a timeout for requests

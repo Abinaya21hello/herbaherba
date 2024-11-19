@@ -4,7 +4,7 @@ import axios from "axios";
 const axiosInstance = axios.create({
   // baseURL: "http://localhost:5000/", // or your API base URL
 
-  baseURL: "https://herba-backend.vercel.app",
+  baseURL: "https://herbaherba-backend.vercel.app",
 });
 
 // Add a request interceptor to include the token
